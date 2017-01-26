@@ -1,5 +1,5 @@
 namespace :db do
-  desc "Fill database with sample data"
+  desc "Fill database with sample data using rake"
   task :populate => :environment do
     Rake::Task['db:reset'].invoke
     make_users
